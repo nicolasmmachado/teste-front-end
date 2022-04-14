@@ -1,14 +1,14 @@
 import style from './Header.module.css';
-import ShieldCheck from '../../assets/Header/ShieldCheck.png';
-import Truck from '../../assets/Header/Truck.png';
-import CreditCard from '../../assets/Header/CreditCard.png';
-import CrownSimple from '../../assets/Header/CrownSimple.png';
-import Heart from '../../assets/Header/Heart.png';
-import MagnifyingGlass from '../../assets/Header/MagnifyingGlass.png';
-import UserCircle from '../../assets/Header/UserCircle.png';
-import Logo from '../../assets/Header/Logo.png';
-import Vector from '../../assets/Header/Vector.png';
-import ShoppingCart from '../../assets/Header/ShoppingCart.png';
+import ShieldCheck from '../../assets/ShieldCheck.png';
+import Truck from '../../assets/Truck.png';
+import CreditCard from '../../assets/CreditCard.png';
+import CrownSimple from '../../assets/CrownSimple.png';
+import Heart from '../../assets/Heart.png';
+import MagnifyingGlass from '../../assets/MagnifyingGlass.png';
+import UserCircle from '../../assets/UserCircle.png';
+import Logo from '../../assets/Logo.png';
+import Vector from '../../assets/Vector.png';
+import ShoppingCart from '../../assets/ShoppingCart.png';
 
 export const Header = () => {
     return (

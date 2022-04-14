@@ -1,0 +1,69 @@
+:root{
+    --principal: #FBB900;
+    --white: #FFF;
+    --gray1: #9F9F9F;
+    --gray2: #E5E5E5;
+    --black: #4D4D4D;
+    --background: #FEF6E7;
+    --line: #F0F0F0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.problems{
+    display: flex;
+    width: 681px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.problems::before{
+    background-image: url('../../assets/CaretDownYellow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.problems::after{
+    background-image: url('../../assets/CaretDownYellow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.problems > p{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray1);
+    padding: 10px 16px;
+    border: 1px solid var(--gray2);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.problems > p:hover{
+    background-color: var(--principal);
+    color: #FFF;
+}
+
+.problems > p.selected{
+    background-color: var(--principal);
+    color: #FFF;
+}

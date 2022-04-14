@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --principal: #FBB900;
+    --white: #FFF;
+    --gray1: #9F9F9F;
+    --black: #4D4D4D;
+    --background: #FEF6E7;
+    --line: #F0F0F0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.carrouselCategories{
+    margin: -25px auto 0 auto;
+    max-width: 1200px;
+    height: 317px;
+}
+
+.carrouselCategories::before{
+    background-image: url('../../assets/CaretDownBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    position: relative;
+    top: 158px;
+    left: -4px;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(178, 134, 0, .24);
+    cursor: pointer;
+}
+
+.carrouselCategories::after{
+    background-image: url('../../assets/CaretDownBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+    position: relative;
+    top: -190px;
+    left: 1172px;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(178, 134, 0, .24);
+    cursor: pointer;
+}
+
+.carrousel{
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.categories > img{
+    width: 277px;
+    height: 277px;
+    border-radius: 10px;
+}
+
+.categories > p{
+    margin: 16px auto 0 auto;
+    color: var(--gray1);
+    font-size: 16px;
+    font-weight: 500;
+}

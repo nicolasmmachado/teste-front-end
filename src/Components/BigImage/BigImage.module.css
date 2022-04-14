@@ -98,3 +98,29 @@
 .selected{
     background-color: #FFF;
 }
+
+.down{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: -24px;
+    background-color: #FFF;
+    box-shadow: 0 6px 16px rgba(178, 134, 0, .24);
+    cursor: pointer;
+}
+
+.down::after{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    z-index: -1;
+}
