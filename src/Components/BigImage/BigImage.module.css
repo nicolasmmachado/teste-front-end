@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --principal: #FBB900;
+    --white: #FFF;
+    --gray1: #9F9F9F;
+    --black: #4D4D4D;
+    --background: #FEF6E7;
+    --line: #F0F0F0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.box{
+    position: relative;
+    top: -8px;
+    margin: 0 auto;
+    width: 1280px;
+    height: 490px;
+    overflow: hidden;
+}
+
+.bigImgCarrousel{
+    position: relative;
+    top: -100px;
+    height: 853px;
+    width: inherit;
+    background-repeat: no-repeat;
+    background-position:center;
+    z-index: -1;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    height:252px;
+    top: -750px;
+    left: 150px;
+    z-index: 5;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.info > input{
+    margin-top: 24px;
+    background-color: var(--principal);
+    color: #FFF;
+    height: 48px;
+    width: 131px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.previus{
+    position: relative;
+    top: -900px;
+    left: 60px;
+    cursor: pointer;
+}
+
+.next{
+    position: relative;
+    top: -940px;
+    right: 60px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.movDots{
+    position: relative;
+    top: -750px;
+    margin: 0 auto;
+    width: 68px;
+    height: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px #fff solid;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #FFF;
+}
