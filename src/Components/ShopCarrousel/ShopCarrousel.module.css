@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 :root{
     --principal: #FBB900;
@@ -18,34 +18,74 @@
 
 .container{
     display: flex;
-    margin: 0 auto;
+    margin: -64px auto 0 auto;
     max-width: 1168px;
     height: 414px;
+    overflow: hidden;
+}
+
+.previus{
+    background-image: url('../../assets/CaretDownBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    position: relative;
+    display: block;
+    top: 180px;
+    left: 34px;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 6px 0px 16px rgba(178, 134, 0, .24);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.next{
+    background-image: url('../../assets/CaretDownBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+    position: relative;
+    display: block;
+    top: 152px;
+    left: 1215px;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: -6px 0px 16px rgba(178, 134, 0, .24);
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .carrouselShop{
-    width: 300%;
-    height: inherit;
+    margin-left: 0px; /*-64 é necessário para corrigir as duas divs de movimentação, -292px cada quadro com 4 items*/
+    display: flex;
+    height: 414px;
     align-items: center;
-    justify-content: space-between;
-    background-color: blue;
+    justify-content: space-around;
 }
 
 .item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: inherit;
+    max-height: 414px;
     width: 253px;
-    background-color: red;
+    margin-right: 39px;
 }
 
 .item > img{
     width: 180px;
     height: 180px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: -40px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .top{
@@ -68,4 +108,69 @@
 
 .top > img{
     margin-bottom: -10px;
+}
+
+.description{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 165px;
+    max-height: 42px;
+    margin: 0 0 0 30px;
+    text-align: center;
+}
+
+.discount{
+    text-decoration: line-through;
+    color: var(--gray1);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 0 30px;
+}
+
+.price{
+    align-items: center;
+    justify-content: space-around;
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: -14px;
+    margin: 6px 0 0 30px;
+}
+
+.price > span{
+    font-size: 18px;
+}
+
+.subscribers{
+    display: flex;
+    height: 99px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0 0 30px;
+}
+
+.subsPrice{
+    color: var(--principal);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subsInfo{
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.addButton{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: var(--principal);
+    padding: 12px 57px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 0 0 30px;
+    cursor: pointer;
 }
